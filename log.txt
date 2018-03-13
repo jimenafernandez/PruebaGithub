@@ -1,0 +1,26 @@
+02-22 15:49:56.778: E/AndroidRuntime(5467): FATAL EXCEPTION: AsyncTask #2
+02-22 15:49:56.778: E/AndroidRuntime(5467): Process: com.artech.pdf.principal, PID: 5467
+02-22 15:49:56.778: E/AndroidRuntime(5467): java.lang.RuntimeException: An error occurred while executing doInBackground()
+02-22 15:49:56.778: E/AndroidRuntime(5467): 	at android.os.AsyncTask$3.done(AsyncTask.java:318)
+02-22 15:49:56.778: E/AndroidRuntime(5467): 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:354)
+02-22 15:49:56.778: E/AndroidRuntime(5467): 	at java.util.concurrent.FutureTask.setException(FutureTask.java:223)
+02-22 15:49:56.778: E/AndroidRuntime(5467): 	at java.util.concurrent.FutureTask.run(FutureTask.java:242)
+02-22 15:49:56.778: E/AndroidRuntime(5467): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133)
+02-22 15:49:56.778: E/AndroidRuntime(5467): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+02-22 15:49:56.778: E/AndroidRuntime(5467): 	at java.lang.Thread.run(Thread.java:761)
+02-22 15:49:56.778: E/AndroidRuntime(5467): Caused by: java.lang.RuntimeException: External Api class 'com.ignia.controls.SDPDFViewer' does not have the appropiate constructor.
+02-22 15:49:56.778: E/AndroidRuntime(5467): 	at com.artech.externalapi.ExternalApiFactory.getConstructor(ExternalApiFactory.java:48)
+02-22 15:49:56.778: E/AndroidRuntime(5467): 	at com.artech.externalapi.ExternalApiFactory.createInstance(ExternalApiFactory.java:35)
+02-22 15:49:56.778: E/AndroidRuntime(5467): 	at com.artech.actions.ApiAction.runExternalObjectMethod(ApiAction.java:71)
+02-22 15:49:56.778: E/AndroidRuntime(5467): 	at com.artech.actions.ApiAction.Do(ApiAction.java:59)
+02-22 15:49:56.778: E/AndroidRuntime(5467): 	at com.artech.actions.CompositeAction.Do(CompositeAction.java:120)
+02-22 15:49:56.778: E/AndroidRuntime(5467): 	at com.artech.actions.ActionExecution$2.doInBackground(ActionExecution.java:327)
+02-22 15:49:56.778: E/AndroidRuntime(5467): 	at com.artech.actions.ActionExecution$2.doInBackground(ActionExecution.java:316)
+02-22 15:49:56.778: E/AndroidRuntime(5467): 	at android.os.AsyncTask$2.call(AsyncTask.java:304)
+02-22 15:49:56.778: E/AndroidRuntime(5467): 	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+02-22 15:49:56.778: E/AndroidRuntime(5467): 	... 3 more
+02-22 15:49:56.778: E/AndroidRuntime(5467): Caused by: java.lang.NoSuchMethodException: <init> [class com.artech.actions.ApiAction]
+02-22 15:49:56.778: E/AndroidRuntime(5467): 	at java.lang.Class.getConstructor0(Class.java:2204)
+02-22 15:49:56.778: E/AndroidRuntime(5467): 	at java.lang.Class.getConstructor(Class.java:1683)
+02-22 15:49:56.778: E/AndroidRuntime(5467): 	at com.artech.externalapi.ExternalApiFactory.getConstructor(ExternalApiFactory.java:46)
+02-22 15:49:56.778: E/AndroidRuntime(5467): 	... 11 more
